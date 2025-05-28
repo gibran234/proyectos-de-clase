@@ -1,0 +1,12 @@
+.grid{
+	display: grid;
+  grid-template-columns: /*200px 300px*/1fr 1fr;
+  grid-template-rows: 2fr 3fr;
+  background-color: darkslategray;
+}
+
+.item{
+	background-color: lightgray;
+	padding:38px;
+	border:4px solid blue;
+}

@@ -41,6 +41,6 @@ function crearAsociativo(){
 		+"<li>"+temperaturas['primavera'] +"</li>"
 	 +"<li>"+temperaturas['verano']+"</li>"
 	 +"<li>"+temperaturas['otonio']+"</li>"
-	 +"<li>"+temperaturas['invierno'] +
+	 +"<li>"+temperaturas['invierno'] + 
 	 "</li></ul>");
 }

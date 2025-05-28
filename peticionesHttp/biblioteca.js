@@ -45,9 +45,7 @@ function procesaRespuesta() {
       let respuestaXhr = peticion_http.responseText;
       alert(respuestaXhr);
 
-      //let respuestaJson = peticion_http.responseXML.getElementsByTagName("Clientes")[0];
-      //let respuestaJson = peticion_http.responseXML.getElementsByTagName("Clientes")[0];
-      
+2
       //document.getElementById("respuesta").innerHTML = 
       //alert(JSON.stringify(respuestaJson));
     }
