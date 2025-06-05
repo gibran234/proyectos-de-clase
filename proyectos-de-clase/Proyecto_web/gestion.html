@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Productos - ElectroGestión</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>ElectroGestión</h1>
+      <p class="slogan">Soluciones electrónicas para tu negocio</p>
+    </header>
+
+    <nav>
+      <ul>
+      <li><a href="index.html" ><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="productos.html"><i class="fa fa-box"></i> Productos</a></li>
+        <li><a href="gestion.html" class="activo"><i class="fa fa-cogs"></i> Gestión de Productos</a></li>
+        <li><a href="contacto.html"><i class="fa fa-envelope"></i> Contacto</a></li>
+      </ul>
+    </nav>
+
+   <main>
+  <h2>Gestión de Inventario de Productos</h2>
+  <form class="formulario-gestion">
+
+    <!-- Cantidad -->
+    <label for="stock">Cantidad en stock actual:</label>
+    <input type="number" id="stock" name="stock" min="0" required>
+
+    <!-- Stock actualizado -->
+    <label>¿El stock está actualizado?</label>
+    <div>
+      <input type="radio" id="actualizado_si" name="actualizado" value="si" checked>
+      <label for="actualizado_si">Sí</label>
+
+      <input type="radio" id="actualizado_no" name="actualizado" value="no">
+      <label for="actualizado_no">No</label>
+    </div>
+
+    <!-- Productos agotados -->
+    <label for="agotados">Productos agotados:</label>
+    <textarea id="agotados" name="agotados" rows="3" placeholder="Ej: Sensor IR, Módulo WiFi..."></textarea>
+
+    <!-- Problemas detectados -->
+    <label>Tipo de problema con productos:</label>
+    <div>
+      <input type="checkbox" id="sinventas" name="problemas" value="sinventas">
+      <label for="sinventas">No se vende</label><br>
+
+      <input type="checkbox" id="defectuoso" name="problemas" value="defectuoso">
+      <label for="defectuoso">Defectuoso</label><br>
+
+      <input type="checkbox" id="descontinuado" name="problemas" value="descontinuado">
+      <label for="descontinuado">Descontinuado</label>
+    </div>
+
+    <!-- Productos más vendidos -->
+    <label for="masvendidos">Productos más vendidos:</label>
+    <textarea id="masvendidos" name="masvendidos" rows="3"></textarea>
+
+    <!-- Categoría -->
+    <label for="categoria">Categoría del producto:</label>
+    <select id="categoria" name="categoria">
+      <option value="microcontroladores">Microcontroladores</option>
+      <option value="sensores">Sensores</option>
+      <option value="actuadores">Actuadores</option>
+      <option value="componentes">Componentes electrónicos</option>
+      <option value="kits">Kits o paquetes</option>
+    </select>
+
+
+    <!-- Fecha -->
+    <label for="fecha">Fecha de última actualización:</label>
+    <input type="date" id="fecha" name="fecha">
+
+    <!-- Observaciones -->
+    <label for="observaciones">Observaciones generales:</label>
+    <textarea id="observaciones" name="observaciones" rows="4"></textarea>
+
+    <button type="submit">Guardar información</button>
+  </form>
+</main>
+    <footer>
+      <p>© 2025 ElectroGestión | contacto@electrogestion.com</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

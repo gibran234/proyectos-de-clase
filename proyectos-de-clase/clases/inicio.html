@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="biblioteca.js"></script>
+	<script src="juego.js"></script>
+	
+	<title>Manejo de clases en JavaScript</title>
+</head>
+<body>
+	<p>Uso de clases</p>
+	<div id="resultado" class="detalle"></div>
+	<hr>
+	<h1 id="tituloResaltado" class="detalle"></h1>
+	<hr>
+	<h1>Funciones DOM</h1>
+	<div id="mensajesDom"></div>
+	<script>
+		const mario = new Personaje("Kalimán");   // '¡Bienvenido/a, Mario!'
+		//const divResultado = document.getElementById("resultado");
+		//const divResultado = document.querySelector("#resultado");
+		//const divPorClase = document.querySelectorAll(".detalle"); //[resultado, tituloResaltado]
+		const divPorClase = document.getElementsByClassName("detalle"); //[resultado, tituloResaltado]
+		console.log("Clase Detalle: " + divPorClase);
+		const divResultado = divPorClase[0];
+
+		if (divResultado) {
+			divResultado.innerHTML = mario.hola();
+		}
+
+		const cuerpo = document.getElementsByTagName("body")[0];
+
+		if (cuerpo){
+			console.log("Padre: " + cuerpo.parentElement);
+			console.log("hijos: " + cuerpo.children);
+			console.log("Primer Hijo: " + cuerpo.firstElementChild);
+			console.log("Último Hijo: " + cuerpo.lastElementChild);
+			console.log("Hermano de su primer hijo: " + cuerpo.firstElementChild.nextElementSibling);
+
+			const divMensajesDom = document.querySelector("#mensajesDom");
+
+			if (divMensajesDom){
+				divMensajesDom.innerHTML = "Padre: " + JSON.stringify(cuerpo.parentElement);
+				divMensajesDom.innerHTML += "<br>Hijos" + JSON.stringify(cuerpo.children);
+				divMensajesDom.innerHTML += "<br>Primer Hijo: " + JSON.stringify(cuerpo.firstElementChild);
+				divMensajesDom.innerHTML += "<br>Último Hijo: " + JSON.stringify(cuerpo.lastElementChild);
+				divMensajesDom.innerHTML += "<br>Hermano de su primer hijo: " + JSON.stringify(cuerpo.firstElementChild.nextElementSibling);
+			}
+
+		}
+
+	</script>
+</body>
+</html>
