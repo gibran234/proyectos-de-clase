@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - ElectroGestión</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>ElectroGestión</h1>
+      <p class="slogan">Soluciones electrónicas para tu negocio</p>
+    </header>
+
+    <nav>
+      <ul>
+         <li><a href="index.html" ><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="productos.html"><i class="fa fa-box"></i> Productos</a></li>
+        <li><a href="gestion.html" ><i class="fa fa-cogs"></i> Gestión de Productos</a></li>
+        <li><a href="contacto.html" class="activo"><i class="fa fa-envelope"></i> Contacto</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Contáctanos</h2>
+      <form class="formulario-contacto">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto">
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu consulta, duda o comentario aquí..."></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+
+      <div class="infoContacto">
+        <h3>Información de contacto</h3>
+        <p><strong>Teléfono:</strong> +52 983 123 4567</p>
+        <p><strong>Correo:</strong> contacto@electrogestion.com</p>
+        <p><strong>Dirección:</strong> Calle Circuito #101, Chetumal, Quintana Roo</p>
+        <p><strong>Horario:</strong> Lunes a Viernes, 9:00 a.m. - 6:00 p.m.</p>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 ElectroGestión | contacto@electrogestion.com</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
