@@ -1,0 +1,74 @@
+<productos>
+  <!-- Registro de inventario - Microcontroladores -->
+  <producto>
+    <stock>45</stock>
+    <actualizado>si</actualizado>
+    <agotados><![CDATA[
+    Arduino Mega 2560, NodeMCU ESP32
+    ]]></agotados>
+    <problemas>descontinuado</problemas>
+    <masvendidos><![CDATA[
+    Arduino UNO R3, Raspberry Pi 4, ESP32 DevKit
+    ]]></masvendidos>
+    <categoria>microcontroladores</categoria>
+    <fecha>2025-06-01</fecha>
+    <observaciones><![CDATA[
+    Revisar proveedores para Arduino Mega. Aumentar stock de ESP32 por alta demanda.
+    ]]></observaciones>
+  </producto>
+  
+  <!-- Registro de inventario - Sensores -->
+  <producto>
+    <stock>78</stock>
+    <actualizado>no</actualizado>
+    <agotados><![CDATA[
+    Sensor de temperatura DS18B20, Sensor ultrasónico HC-SR04
+    ]]></agotados>
+    <problemas>sinventas,defectuoso</problemas>
+    <masvendidos><![CDATA[
+    Sensor PIR, Sensor de humedad DHT22, Fotoresistencia LDR
+    ]]></masvendidos>
+    <categoria>sensores</categoria>
+    <fecha>2025-05-28</fecha>
+    <observaciones><![CDATA[
+    Algunos sensores de movimiento PIR presentan fallas intermitentes. Contactar proveedor.
+    Actualizar inventario de sensores la próxima semana.
+    ]]></observaciones>
+  </producto>
+  
+  <!-- Registro de inventario - Componentes electrónicos -->
+  <producto>
+    <stock>156</stock>
+    <actualizado>si</actualizado>
+    <agotados><![CDATA[
+    Resistencias 10K ohm, Capacitores electrolíticos 1000uF
+    ]]></agotados>
+    <problemas></problemas>
+    <masvendidos><![CDATA[
+    LED 5mm varios colores, Resistencias 220 ohm, Breadboard 830 puntos
+    ]]></masvendidos>
+    <categoria>componentes</categoria>
+    <fecha>2025-06-03</fecha>
+    <observaciones><![CDATA[
+    Stock de componentes básicos en buen estado. Considerar paquetes promocionales.
+    ]]></observaciones>
+  </producto>
+  
+  <!-- Registro de inventario - Actuadores -->
+  <producto>
+    <stock>23</stock>
+    <actualizado>si</actualizado>
+    <agotados><![CDATA[
+    Servo motor SG90, Motor paso a paso 28BYJ-48
+    ]]></agotados>
+    <problemas>sinventas</problemas>
+    <masvendidos><![CDATA[
+    Motor DC 3-6V, Relé 5V, Buzzer activo
+    ]]></masvendidos>
+    <categoria>actuadores</categoria>
+    <fecha>2025-06-04</fecha>
+    <observaciones><![CDATA[
+    Los servomotores tienen poca rotación. Evaluar nuevos proveedores con mejor calidad-precio.
+    ]]></observaciones>
+  </producto>
+</productos>

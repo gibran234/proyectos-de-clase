@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Gestión de Productos - ElectroGestión</title>
-  <link rel="stylesheet" href="style.css">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
@@ -19,13 +20,14 @@
         <li><a href="productos.html"><i class="fa fa-box"></i> Productos</a></li>
         <li><a href="gestion.html" class="activo"><i class="fa fa-cogs"></i> Gestión de Productos</a></li>
         <li><a href="contacto.html"><i class="fa fa-envelope"></i> Contacto</a></li>
+
       </ul>
     </nav>
 
    <main>
   <h2>Gestión de Inventario de Productos</h2>
-  <form class="formulario-gestion">
-
+  <form class="formulario-gestion"  onsubmit="guardarProducto()" >
+      <input type="hidden" id="index" />
     <!-- Cantidad -->
     <label for="stock">Cantidad en stock actual:</label>
     <input type="number" id="stock" name="stock" min="0" required>
@@ -81,12 +83,59 @@
     <textarea id="observaciones" name="observaciones" rows="4"></textarea>
 
     <button type="submit">Guardar información</button>
+ <button type="reset" onclick="document.getElementById('index').value = '';">Cancelar</button>
+  <br>
+   
   </form>
+  <div id="contenedor">
+    
+  </div>
+
+  <div style="margin-top: 20px;" class="Acciones">
+    <button onclick="guardarEnLocalStorage()" class="btn-guardar">Guardar en navegador</button>
+    <button onclick="exportarComoXML()" class="btn-exportar">Exportar como XML</button>
+  </div>
+  <style>
+    .Acciones button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9em;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-guardar{
+  background: #2e86c1;
+  color: #090a0a;
+}
+
+.btn-guardar:hover {
+  background: #c9e5fc;
+}
+
+.btn-exportar {
+  background: #27ae60 ;
+  color: #090a0a;
+}
+
+.btn-exportar:hover {
+  background: #f8c4c4;
+}
+
+
+
+.fa {
+  font-size: 1em;
+}
+  </style>
 </main>
     <footer>
       <p>© 2025 ElectroGestión | contacto@electrogestion.com</p>
     </footer>
   </div>
-  <script src="script.js"></script>
+  <script src="gestion.js"></script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contactos>
+  <contacto>
+    <nombre>Juan Pérez</nombre>
+    <email>juan.perez@example.com</email>
+    <asunto>Consulta sobre productos</asunto>
+    <mensaje>Me gustaría recibir información sobre los productos disponibles.</mensaje>
+  </contacto>
+  <contacto>
+    <nombre>Laura Gómez</nombre>
+    <email>laura.gomez@example.com</email>
+    <asunto>Problema con un pedido</asunto>
+    <mensaje>Tuve un problema con el último pedido, por favor contáctenme.</mensaje>
+  </contacto>
+</contactos>

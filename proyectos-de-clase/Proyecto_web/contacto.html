@@ -15,18 +15,20 @@
 
     <nav>
       <ul>
-         <li><a href="index.html" ><i class="fa fa-home"></i> Inicio</a></li>
+        <li><a href="index.html"><i class="fa fa-home"></i> Inicio</a></li>
         <li><a href="productos.html"><i class="fa fa-box"></i> Productos</a></li>
-        <li><a href="gestion.html" ><i class="fa fa-cogs"></i> Gestión de Productos</a></li>
+        <li><a href="gestion.html"><i class="fa fa-cogs"></i> Gestión de Productos</a></li>
         <li><a href="contacto.html" class="activo"><i class="fa fa-envelope"></i> Contacto</a></li>
       </ul>
     </nav>
 
     <main>
       <h2>Contáctanos</h2>
-      <form class="formulario-contacto">
+      <form class="formulario-contacto" onsubmit="guardarContactos(event)">
+        <input type="hidden" id="index" />
+        
         <label for="nombre">Nombre completo:</label>
-        <input type="text" id="nombre" name="nombre" required>
+        <input type="text" id="nombre" maxlength="50" required>
 
         <label for="email">Correo electrónico:</label>
         <input type="email" id="email" name="email" required>
@@ -36,9 +38,18 @@
 
         <label for="mensaje">Mensaje:</label>
         <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu consulta, duda o comentario aquí..."></textarea>
-
+<br> <br>
         <button type="submit">Enviar mensaje</button>
       </form>
+      <br>
+      <div id="contenedor"></div>
+
+      <div style="margin-top: 20px;" class="Acciones">
+        <button onclick="guardarEnLocalStorage()" class="btn-guardar">Guardar en navegador</button>
+        <button onclick="exportarComoXML()" class="btn-exportar">Exportar como XML</button>
+      </div>
+
+    
 
       <div class="infoContacto">
         <h3>Información de contacto</h3>
@@ -53,6 +64,7 @@
       <p>© 2025 ElectroGestión | contacto@electrogestion.com</p>
     </footer>
   </div>
-  <script src="script.js"></script>
+
+  <script src="contactos.js"></script>
 </body>
 </html>

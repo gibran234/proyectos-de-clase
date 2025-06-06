@@ -165,7 +165,7 @@ footer {
   font-size: 1em;
   width: 100%;
 }
-/*Estilo de Contacto*/
+/Estilo de Contacto/
 .formulario-contacto {
   background-color: #fff;
   padding: 2em;
@@ -238,10 +238,12 @@ button[type="submit"]:hover {
   text-decoration: none;
   margin-top: 15px;
   transition: background-color 0.3s ease;
+  
 }
 
 .boton-accion:hover {
   background-color: #0056b3;
+
 }
 .bienvenida h2 {
   margin-top: 0;
@@ -251,11 +253,12 @@ button[type="submit"]:hover {
   display: inline-block;
   background-color: #27ae60;
   color: white;
-  padding: 12px 20px;
+  padding: 15px 50px;
   border-radius: 6px;
   text-decoration: none;
   margin-top: 15px;
   transition: background-color 0.3s;
+
 }
 
 .boton-accion:hover {
@@ -325,4 +328,58 @@ button[type="submit"]:hover {
   }
 }
 
+}
+
+/* Estilo general del contenedor de cada producto */
+.producto-info {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #333;
+  transition: transform 0.2s ease;
+}
+
+.producto-info:hover {
+  transform: scale(1.01);
+}
+
+
+
+.Acciones button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9em;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-guardar{
+  background: #2e86c1;
+  color: #090a0a;
+}
+
+.btn-guardar:hover {
+  background: #c9e5fc;
+}
+
+.btn-exportar {
+  background: #27ae60 ;
+  color: #090a0a;
+}
+
+.btn-exportar:hover {
+  background: #f8c4c4;
+}
+
+
+
+.fa {
+  font-size: 1em;
 }
